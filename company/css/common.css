@@ -183,7 +183,7 @@ ul.gnb>li>ul li a {
     top: 0;
     width: 10px;
     height: 10px;
-    background-color: var(--main-color-deep);
+    background-color: var(--sub-color3);
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
@@ -234,7 +234,7 @@ main section.main_visual {
         }
 
         & li.main1 a {
-            background-image: url(../img2/main1.jpg );
+            background-image: url(../img2/main4.jpg );
         }
 
         & li.main2 a {
@@ -812,15 +812,15 @@ section.txt_area h2 .tit {
     overflow: hidden;
 }
 .trust ul li.sl1{
-    background-image: url(../img/sl1.png);
+    background-image: url(../img2/sl1.png);
     top: 0;
 }
 .trust ul li.sl2{
-    background-image: url(../img/sl2.png);
+    background-image: url(../img2/sl2.png);
     top: 20vh;
 }
 .trust ul li.sl3{
-    background-image: url(../img/sl3.png);
+    background-image: url(../img2/sl3.png);
     top: 40vh;
 }
 .trust ul li a{
@@ -949,7 +949,7 @@ footer .footer_txt{
 footer h3{
     font-size: 2rem;
     margin-bottom: 20px;
-    color: var(--sub-color2);
+    color: var(--main-color-deep);
 }
 footer p{
     font-size: 4rem;
