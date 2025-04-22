@@ -237,52 +237,32 @@
     padding: 40px 20px;
 }
 .contact_main .bingo_visual .contact_title{
-    font-family: var(--Bangers);
-    margin-bottom: 40px;
     display: flex;
+    font-family: var(--Bangers);
     align-items: center;
-    justify-content: center;
     padding: 20px 40px;
-    gap: 20px;
-    position: relative;
 }
 .contact_main .bingo_visual .contact_title h2{
     font-size: 96px;
-    position: relative;
-    z-index: 1;
-    margin: 0 40px;
+    text-align: center;
 }
 .contact_main .bingo_visual .contact_title span{
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.2;
-    z-index: 1000;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
 }
-.contact_main .bingo_visual .contact_title span img{
-    width: 120px; height: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contact_main .bingo_visual .contact_title .tag-left{
-    position: absolute;
-    left: 0; top: 0;
-}
-.contact_main .bingo_visual .contact_title .tag-right{
-    position: absolute;
-    right: 0; top: 0;
-}
+
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
     font-family: var(--Glamour_Absolute);
     font-size: 96px;
     display: table;
     border-collapse: separate;
-    border-spacing: 0; /* 안 겹치게 하기 위해 */
-    border: 5px solid #000;
+    border-spacing: 3px; /* 안 겹치게 하기 위해 */
+    border: 5px solid #000; /* 바깥 테두리 */
+    background-color: #000;
     margin: 0 auto;
 }
 
@@ -317,10 +297,7 @@
 
   .player_name_input input {
     font-size: 60px;
-    width: 500px;
     padding: 5px 10px;
     text-align: center;
     font-family: var(--Cafe24Ohsquare);
-    border: 2px solid #000;
-    margin-left: 20px;
   }

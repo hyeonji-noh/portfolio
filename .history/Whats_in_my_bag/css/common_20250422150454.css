@@ -254,11 +254,11 @@
 }
 .contact_main .bingo_visual .contact_title span{
     font-size: 36px;
-    position: absolute;
+    position: relative;
     display: inline-block;
     text-align: center;
     line-height: 1.2;
-    z-index: 1000;
+    z-index: 100;
 }
 .contact_main .bingo_visual .contact_title span img{
     width: 120px; height: 120px;

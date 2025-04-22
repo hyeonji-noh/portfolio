@@ -254,22 +254,14 @@
 }
 .contact_main .bingo_visual .contact_title span{
     font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.2;
-    z-index: 1000;
 }
 .contact_main .bingo_visual .contact_title span img{
     width: 120px; height: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .contact_main .bingo_visual .contact_title .tag-left{
     position: absolute;
     left: 0; top: 0;
+    display: flex;
 }
 .contact_main .bingo_visual .contact_title .tag-right{
     position: absolute;

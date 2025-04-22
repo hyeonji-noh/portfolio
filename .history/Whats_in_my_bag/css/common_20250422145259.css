@@ -238,43 +238,24 @@
 }
 .contact_main .bingo_visual .contact_title{
     font-family: var(--Bangers);
+    position: relative;
+    text-align: center;
     margin-bottom: 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px;
-    gap: 20px;
-    position: relative;
 }
 .contact_main .bingo_visual .contact_title h2{
     font-size: 96px;
-    position: relative;
-    z-index: 1;
-    margin: 0 40px;
+    margin: 0 auto;
 }
 .contact_main .bingo_visual .contact_title span{
     font-size: 36px;
-    position: absolute;
-    display: inline-block;
+    white-space: nowrap;
+    display: flex;
     text-align: center;
-    line-height: 1.2;
-    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
 }
-.contact_main .bingo_visual .contact_title span img{
-    width: 120px; height: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contact_main .bingo_visual .contact_title .tag-left{
-    position: absolute;
-    left: 0; top: 0;
-}
-.contact_main .bingo_visual .contact_title .tag-right{
-    position: absolute;
-    right: 0; top: 0;
-}
+
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
     font-family: var(--Glamour_Absolute);
@@ -317,10 +298,7 @@
 
   .player_name_input input {
     font-size: 60px;
-    width: 500px;
     padding: 5px 10px;
     text-align: center;
     font-family: var(--Cafe24Ohsquare);
-    border: 2px solid #000;
-    margin-left: 20px;
   }

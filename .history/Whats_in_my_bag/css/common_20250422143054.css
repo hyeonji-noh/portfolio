@@ -228,75 +228,57 @@
     position: relative;
 }
 .contact_main .bingo_visual{
-    width: 1700px; height: auto;
+    width: 1700px; height: 900px;
     border: 5px solid #000;
     position: absolute;
     left: 50%; top: 50%;
     transform: translate(-50%, -50%);
-    background: var(--main-color);
-    padding: 40px 20px;
+    background: var(--main-color)
 }
 .contact_main .bingo_visual .contact_title{
-    font-family: var(--Bangers);
-    margin-bottom: 40px;
     display: flex;
+    font-family: var(--Bangers);
     align-items: center;
-    justify-content: center;
     padding: 20px 40px;
-    gap: 20px;
-    position: relative;
 }
 .contact_main .bingo_visual .contact_title h2{
     font-size: 96px;
-    position: relative;
-    z-index: 1;
-    margin: 0 40px;
+    text-align: center;
 }
 .contact_main .bingo_visual .contact_title span{
-    font-size: 36px;
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    line-height: 1.2;
-    z-index: 1000;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
 }
-.contact_main .bingo_visual .contact_title span img{
-    width: 120px; height: 120px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contact_main .bingo_visual .contact_title .tag-left{
-    position: absolute;
-    left: 0; top: 0;
-}
-.contact_main .bingo_visual .contact_title .tag-right{
-    position: absolute;
-    right: 0; top: 0;
-}
+
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
     font-family: var(--Glamour_Absolute);
     font-size: 96px;
-    display: table;
-    border-collapse: separate;
-    border-spacing: 0; /* 안 겹치게 하기 위해 */
-    border: 5px solid #000;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background: #000;
+    padding: 5px;
+    gap: 3px;
     margin: 0 auto;
+    border: none;
 }
 
 .contact_main .bingo_visual .bingo_board .row{
     width: 100%; height: 150px;
-    display: table-row;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 3px;
 }
 .contact_main .bingo_visual .bingo_board .row .cell{
     width: 150px; height: 150px;
     background-color: #fff;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    border: 3px solid #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #000;
 }
 .contact_main .bingo_board .row2 .cell {
     background-color: #FF6E4E;
@@ -317,10 +299,7 @@
 
   .player_name_input input {
     font-size: 60px;
-    width: 500px;
     padding: 5px 10px;
     text-align: center;
     font-family: var(--Cafe24Ohsquare);
-    border: 2px solid #000;
-    margin-left: 20px;
   }

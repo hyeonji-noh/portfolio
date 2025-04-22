@@ -254,7 +254,7 @@
 }
 .contact_main .bingo_visual .contact_title span{
     font-size: 36px;
-    position: absolute;
+    position: relative;
     display: inline-block;
     text-align: center;
     line-height: 1.2;
