@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG화학</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <h1><a href="#"><img src="img2/pngimg.com - lg_logo_PNG23.png" alt="LG">LG화학</a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">COMPANY</a>
+                        <ul>
+                            <li><a href="#">기업 정보</a></li>
+                            <li><a href="#">투자 정보</a></li>
+                            <li><a href="#">R&D</a></li>
+                            <li><a href="#">미디어</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">PRODUCT</a>
+                        <ul>
+                            <li><a href="#">석유화학</a></li>
+                            <li><a href="#">첨단소재</a></li>
+                            <li><a href="#">생명과학</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SUSTAINABILITY</a>
+                        <ul>
+                            <li><a href="#">지속가능경영전략</a></li>
+                            <li><a href="#">기후변화</a></li>
+                            <li><a href="#">Compliance</a></li>
+                            <li><a href="#">자원선순환</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CAREERS</a>
+                        <ul>
+                            <li><a href="#">Workplace Vision</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">Life</a></li>
+                            <li><a href="#">Apply</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><strong>KOR</strong>
+                        <span class="material-symbols-outlined">
+                            keyboard_arrow_down</span>
+                    </p>
+                    <ul>
+                        <li><a href="#"><strong>ENG</strong></a></li>
+                        <li><a href="#"><strong>JPN</strong></a></li>
+                    </ul>
+                </div><!-- //.sel -->
+            </div><!-- //.r_menu -->
+        </header>
+        <main>
+            <div class="custom_cursor"></div>
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1"><a href="#">
+                                <div class="tit">
+                                    <p>Sustainability</p>
+                                    <h2>지속가능한 환경<span>을 위한 </span> 소중한 <span>약속</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main2"><a href="#">
+                                <div class="tit">
+                                    <p>Green Connector</p>
+                                    <h2>사회공헌활동<span>과</span> 환경 가치<span>를 연결</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main3"><a href="#">
+                                <div class="tit">
+                                    <p>LETZero</p>
+                                    <h2>지구와 <span>함께 만들어가는</span> 건강한 미래</h2>
+                                </div>
+                            </a></li>
+                    </ul><!-- //.swiper-wrapper -->
+                </div><!-- //.main_slide_wrap swiper -->
+    
+                <!-- custom pagenation -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num">
+                        <span class="swiper-pagination-current">01</span> / 03
+                    </div>
+    
+                    <!-- 중앙 세로라인(진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+    
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div><!-- //.vertical-pagination -->
+            </section><!--main_visual  -->
+    
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit">
+                        <span>We</span> connect<span> science to life</span> for a
+                        <span> better</span> future</strong>
+                    <b class="tit"><span>더 나은 미래를</span> 위해<span> 과학을</span> 인류의 삶에 연결합니다.</b>
+                    <em class="tit"><span>LG</span>화학</em>
+                </h2>
+            </section><!-- txt_area -->
+    
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">vision</div>
+                        <ul class='list'>
+                            <li>
+                                We connect science to life for a better future
+                            </li>
+                            <li>
+                                더 나은 미래를 위해 과학을 인류의 삶에 연결합니다.
+                            </li>
+                        </ul>
+    
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">our value & vision</h2>
+                        <p>LG화학은 축적된 지식과 기술, 솔루션에 새로운 지식을 결합한 ‘과학(Science)’을<br>
+                            인류의 ‘삶(Life)’에 연결(Connect)해 ‘더 나은 미래(Better Future)’로 나아가고자 합니다.
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>Science</h3>
+                                    <p>과학은 우리를 둘러싼 모든 분야에서 <br>앞으로 만들어갈 수많은 기술과 솔루션을 의미합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>Connect to Life</h3>
+                                    <p>지식과 기술을 새로운 분야와 연결해 삶을 풍요롭게 만드는 것,<br>이것이 바로 우리가 추구하는 과학과 삶의 연결입니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>Better future</h3>
+                                    <p>인류의 삶과 산업 전반에 영향을 미치는 글로벌 기업으로서<br>지속가능한 미래를 만드는데 선도적인 역할을 할 것입니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section><!-- //.vision -->
+    
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">Sustainability product</h2>
+                    <p>세계적인 품질과 첨단기술이<br>
+                        집약된 제품과 소재로 미래 생활을 앞당깁니다.
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img2/p1.png" alt="bgt"></div>
+                        <div class="name">
+                            <strong>BGT</strong>
+                            <p>백그라인딩시 Wafer의 표면을 보호하는 필수 소재</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img2/p2.png" alt="CCL/PPG"></div>
+                        <div class="name">
+                            <strong>CCL/PPG</strong>
+                            <p>반도체 IC Package 기판의 핵심 소재</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img2/p3.png" alt="DAF"></div>
+                        <div class="name">
+                            <strong>DAF</strong>
+                            <p>반도체 패키지의 적층화, 박형화를 위한 초박형 필름 접착소재</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img2/p4.png" alt="LUCEL"></div>
+                        <div class="name">
+                            <strong>LUCEL</strong>
+                            <p>POM을 베이스한 컴파운딩 엔지니어링 플라스틱</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img2/p5.png" alt="Display Stripper"></div>
+                        <div class="name">
+                            <strong>Display Stripper</strong>
+                            <p>TFT 회로전극 제조 필수제품</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img2/p6.png" alt="LUMIPLAS"></div>
+                        <div class="name">
+                            <strong>LUMIPLAS</strong>
+                            <p>PC를 베이스 광확산 기능을 부여한 엔지니어링 플라스틱</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img2/p7.png" alt="LUSEP"></div>
+                        <div class="name">
+                            <strong>LUSEP</strong>
+                            <p>경량화가 가능한 고내열 열가소성 엔지니어링 플라스틱</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img2/p8.png" alt="LUPOL"></div>
+                        <div class="name">
+                            <strong>LUPOL</strong>
+                            <p>PP를 베이스로 기계적 물성 및 내열성을 증진 엔지니어링 플라스틱</p>
+                        </div>
+                    </li>
+                </ul>
+            </section><!-- //.special_product -->
+            <section class="business">
+                <div class="s_tit">
+                    <h2>Our Sustainability</h2>
+                    <p>LG화학은 경영활동 전반에 고객, 환경 그리고 사회적 가치를 포함한<br>Sustainability 비전을 토대로 지속 가능한 혁신을 추구하고 있습니다.</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+    
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img2/b1.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img2/logo.png" alt="프로젝트 서브로고">
+                                    <span>기후변화</span>
+                                    <h3>국내 화학업계 최초로<br>2050년까지의 탄소중립성장 선언</h3>
+                                    <p>사업 포트폴리오를 저탄소와 친환경 중심으로 혁신하고 재생에너지로의 전환을 추진하는 등<br>탄소 감축을 위한 다양한 이행 전략을 수립하여 실행하고 있습니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#기후변화</li>
+                                            <li>#탄소중립</li>
+                                            <li>#환경오염</li>
+                                            <li>#온실가스</li>
+                                            <li>#재생에너지</li>
+                                            <li>#친환경</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img2/b2.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img2/logo.png" alt="프로젝트 서브로고">
+                                    <span>자원선순환</span>
+                                    <h3>플라스틱을 통한<br>새로운 비즈니스 기회 연결</h3>
+                                    <p>LG화학은 플라스틱 폐기물의 기계적/화학적 재활용을 적극 추진하여 자원선순환 시스템을 구축하고,<br> 재활용 플라스틱 개발, 분해성 바이오 플라스틱 개발 등을 통해 이를 새로운 비즈니스 기회로<br> 연결하고 있습니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#재활용</li>
+                                            <li>#플라스틱</li>
+                                            <li>#바이오</li>
+                                            <li>#폐기물 제로</li>
+                                            <li>#친환경 제품</li>
+                                            <li>#ESG경영</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img2/b3.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img2/logo.png"  alt="프로젝트 서브로고">
+                                    <span>공급망</span>
+                                    <h3>책임 있는<br>공급망 관리</h3>
+                                    <p>공급망에 대한 책임 있는 관리를 이행하는 것은 글로벌 기업으로서의 책무입니다.<br> 
+                                    LG화학은 공정 뿐만 아니라 공급망 전반에 걸쳐서도 엄격한 기준을 설정하고<br>윤리적이고 책임 있는 원료 조달 시스템을 구축하고자 합니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#글로벌</li>
+                                            <li>#협력회사</li>
+                                            <li>#법과규제</li>
+                                            <li>#OECD</li>
+                                            <li>#현장점검</li>
+                                            <li>#책임감</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img2/b4.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img2/logo.png"  alt="프로젝트 서브로고">
+                                    <span>Compliance</span>
+                                    <h3>환경안전과<br> 준법경영</h3>
+                                    <p>환경안전, 유해화학물질 관리, 준법 등 컴플라이언스는 비즈니스의 기본입니다.<br> 
+                                        LG화학은 기본 준수를 철저히 하여 발생할 수 있는 리스크를 최소화하고자 합니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#고객가치 증대</li>
+                                            <li>#Eco product</li>
+                                            <li>#ISO 14001</li>
+                                            <li>#ISO 45001</li>
+                                            <li>#KOSHA-MS</li>
+                                            <li>#안정환경팀</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img2/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <img src="img2/logo.png"  alt="프로젝트 서브로고">
+                                    <span>인권</span>
+                                    <h3>인권경영</h3>
+                                    <p>인간에 대한 존중과 공정한 대우는 비즈니스를 수행하는데 가장 핵심적인 요소입니다.<br> 
+                                        LG화학은 임직원의 권리를 존중하고 그들의 역량을 개발하며 공정한 대우를 통해<br>일하기 좋은 기업문화를 만들어 나가고자 합니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#인권존중</li>
+                                            <li>#존엄성</li>
+                                            <li>#다양성</li>
+                                            <li>#ILO 핵심협약</li>
+                                            <li>#UN 세계인권선언</li>
+                                            <li>#글로벌 인권노동</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- //.business -->
+
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">No.1 Science<br>
+                        Innovation Company</h2>
+                    <p>LG화학은 '화학'을 넘어 '과학'으로 정체성을 재정립하고,<br>
+                        'We Connect Science to Life for a Better Future' 비전을 수립했습니다.</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img2/vid1.mp4" loop autoplay muted playsinline></video>
+                </figure>
+            </section><!-- //.vid -->
+
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>Green Connector</h2>
+                    <p>LG화학은 UN이 정한 지속가능한 개발목표와<br>연계해 더 나은 미래 환경 구축에 앞장서고 있습니다.</p>
+                </div><!-- //.s_tit -->
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>Green Ecology</h3>
+                                <p>생물다양성 보전 활동을 통해 글로벌 환경 위기에 대응합니다.</p>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>Green Education</h3>
+                                <p>청소년 과학,환경 교육을 통해 미래세대 ESG 인재육성을 지원합니다.</p>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>Green Economy</h3>
+                                <p>친환경 경제 활동 지원을 통한 사회적 가치 창출에 앞장서고 있습니다.</p>
+                            </a></li>
+                    </ul>
+                </div><!-- //.con -->
+            </section><!-- //.trust -->
+            <section class="news">
+                <div class="s_tit">
+                    <h2>Latest Updates</h2>
+                    <p>생활 속의 LG화학</p>
+                    <a href="#" class="more">View More &gt;</a>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t1.png" alt=""></div>
+                                <p class="txt">
+                                    요즘 대세! 친환경 느낌 나는 스페클 패턴
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t2.png" alt=""></div>
+                                <p class="txt">
+                                    화장품 업계에 부는 친환경 바람
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t3.png" alt=""></div>
+                                <p class="txt">
+                                    푹신함 쿠션감으로 피로를 덜어주는 운동화
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t4.png" alt=""></div>
+                                <p class="txt">
+                                    스마트 쉘터, 이젠 소재까지...
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t5.png" alt=""></div>
+                                <p class="txt">
+                                    전자제품의 짝꿍, 리모컨도 친환경!
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t6.png" alt=""></div>
+                                <p class="txt">
+                                    튼튼한 친환경 포장백(Flecon bag)
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t7.png" alt=""></div>
+                                <p class="txt">
+                                    재활용 플라스틱 용기로 건강하게 즐기기
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t8.png" alt=""></div>
+                                <p class="txt">
+                                    친환경 PVC 부츠로 장마도 걱정없이!
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- //.news -->
+        </main>
+
+        <footer>
+            <div class="footer_txt">
+            <h3>We Connect Science</h3>
+            <p>인류의 더 나은 삶을 위한<br>
+               지금까지의 여정은<span>"과학의 연결"을 통한</span>
+               <br>도전의 연속이었습니다.</p>
+            </div>   
+               <video src="img2/1_re_low[4].mp4" loop autoplay muted playsinline></video>            
+        </footer>
+    </div><!-- //.wrap -->
+
+</body>
+
+</html>
