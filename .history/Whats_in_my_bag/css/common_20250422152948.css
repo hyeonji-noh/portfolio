@@ -223,7 +223,7 @@
 
 /* contact_main */
 .contact_main{
-    width: 100%; height: 130vh;
+    width: 100%; height: 150vh;
     background-color: var(--main-color);
     position: relative;
 }
@@ -243,7 +243,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    padding: 20px 30px;
+    padding: 20px 40px;
+    gap: 40px;
 }
 .contact_main .bingo_visual .contact_title h2{
     font-size: 96px;
@@ -255,7 +256,8 @@
 .contact_title .tag-left,
 .contact_title .tag-right {
   position: relative;
-  width: 150px; height: 150px;
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,21 +266,25 @@
 .contact_main .bingo_visual .contact_title span{
     font-size: 36px;
     position: absolute;
+    display: inline-block;
     text-align: center;
     line-height: 1.2;
-    z-index: 100;
-    white-space: nowrap;
+    z-index: 1000;
 }
 .contact_main .bingo_visual .contact_title span img{
-    width: 140px; height: 140px;
+    width: 120px; height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .contact_main .bingo_visual .contact_title .tag-left{
     position: absolute;
-    left: 10%; top: 0;
+    left: 0; top: 0;
 }
 .contact_main .bingo_visual .contact_title .tag-right{
     position: absolute;
-    right: 10%; top: 0;
+    right: 0; top: 0;
 }
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;

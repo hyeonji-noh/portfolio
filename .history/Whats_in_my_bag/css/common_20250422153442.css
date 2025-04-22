@@ -223,7 +223,7 @@
 
 /* contact_main */
 .contact_main{
-    width: 100%; height: 130vh;
+    width: 100%; height: 120vh;
     background-color: var(--main-color);
     position: relative;
 }

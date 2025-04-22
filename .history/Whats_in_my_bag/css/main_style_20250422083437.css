@@ -616,7 +616,7 @@ opacity: 1;
 /* poject_overview */
 
 .project_overview{
-  width: 100%; height: 130vh;
+  width: 100%; height: 150vh;
   background: var(--main-color);
   display: flex;
   flex-direction: column;

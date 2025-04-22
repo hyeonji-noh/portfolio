@@ -223,7 +223,7 @@
 
 /* contact_main */
 .contact_main{
-    width: 100%; height: 130vh;
+    width: 100%; height: 150vh;
     background-color: var(--main-color);
     position: relative;
 }
@@ -270,7 +270,9 @@
     white-space: nowrap;
 }
 .contact_main .bingo_visual .contact_title span img{
-    width: 140px; height: 140px;
+    width: 130px; height: 130px;
+    position: absolute;
+    top: 50%; left: 50%;
 }
 .contact_main .bingo_visual .contact_title .tag-left{
     position: absolute;
