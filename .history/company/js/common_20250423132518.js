@@ -1,37 +1,3 @@
-gsap.registerPlugin(ScrollTrigger); //스크롤트리거 연결
-const scrollContainer = document.querySelector("[data-scroll-container]");
-// 스크롤트리거가 계속 먹을 수 있도록 한 번만 설정
-ScrollTrigger.defaults({
-    scroller: scrollContainer,
-    scrub: 1
-});
-
-const locoScroll = new LocomotiveScroll({
-    el: scrollContainer,  // 전체 페이지에 적용
-    smooth: true, // 부드러운 스크롤 활성화
-    lerp: 0.08, // 부드러운 감속 정도 (0~1)
-});
-
-// Locomotive Scroll과 ScrollTrigger 동기화
-locoScroll.on("scroll", ScrollTrigger.update);
-ScrollTrigger.scrollerProxy(scrollContainer, {
-    scrollTop(value) {
-        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-    },
-    getBoundingClientRect() {
-        return {
-            top: 0,
-            left: 0,
-            width: window.innerWidth,
-            height: window.innerHeight,
-        };
-    }
-});
-
-    // Locomotive Scroll 적용 후 ScrollTrigger 업데이트
-    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
-    ScrollTrigger.refresh();
-
 
 const nav = document.querySelector('nav');
 nav.addEventListener('mouseenter',(e)=>{
@@ -109,29 +75,29 @@ if(businessSection && cursor){
     })
 }
 
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.txt_area',
-        start: 'top 20%',
-        end: 'bottom bottom',
-        scrub: true,
-    }
-})
+    let tl = gsap.timeline({
+        ScrollTrigger : {
+            trigger : '.txt_area',
+            start : 'top 20%',
+            end : 'bottom bottom',
+            scrub : true,
+        }
+    });
 
-tl.to('.txt_area strong.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-}).to('.txt_area b.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-},'+=0.6')
-.to('.txt_area em.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-},'+=1.2')
+    tl.to('.txt_area strong.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=0.6').to('.txt_area b.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=0.6')
+    .to('.txt_area em.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=1.2')
 
     const visionCards = gsap.utils.toArray('.vision .card');
     visionCards.forEach((card,i)=>{

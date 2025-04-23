@@ -109,29 +109,29 @@ if(businessSection && cursor){
     })
 }
 
-let tl = gsap.timeline({
-    scrollTrigger: {
-        trigger: '.txt_area',
-        start: 'top 20%',
-        end: 'bottom bottom',
-        scrub: true,
-    }
-})
+    let tl = gsap.timeline({
+        ScrollTrigger : {
+            trigger : '.txt_area',
+            start : 'top 20%',
+            end : 'bottom bottom',
+            scrub : true,
+        }
+    });
 
-tl.to('.txt_area strong.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-}).to('.txt_area b.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-},'+=0.6')
-.to('.txt_area em.tit', {
-    backgroundSize : '100%',
-    duration :1,
-    ease:'none'
-},'+=1.2')
+    tl.to('.txt_area strong.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=0.6').to('.txt_area b.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=0.6')
+    .to('.txt_area em.tit', {
+        backgroundSize : '100%',
+        duration :1,
+        ease:'none'
+    },'+=1.2')
 
     const visionCards = gsap.utils.toArray('.vision .card');
     visionCards.forEach((card,i)=>{
