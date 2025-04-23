@@ -394,88 +394,41 @@ document.querySelectorAll('.postit-tab').forEach(tab => {
 
 /* 클릭시 컬러 변경 */
 
-$(document).ready(function() {
-  const contactSection = $('.contact_main');
-  
-  // 색상 초기화 함수
-  function resetColors() {
-    $('.cell').removeClass('highlight-orange highlight-mint');
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const rowConfigs = {
+    row1: { range: [0, 10], color: "#FF6E4E" },
+    row2: { range: [0, 9], color: "#3BFBA8", last: "#FF6E4E" },
+    row3: { range: [0, 6], color: "#3BFBA8" },
+    row4: { range: [0, 4], color: "#3BFBA8" }
+  };
 
-  // 색칠 애니메이션 함수
-  function animateCells() {
-    // 첫 번째 줄 주황색 칠하기
-    $('.row1 .cell').each(function(index) {
-      setTimeout(() => {
-        $(this).addClass('highlight-orange');
-      }, index * 300); // 각 셀마다 0.3초씩 지연
-    });
+  const rows = document.querySelectorAll(".bingo_board .row");
 
-    // 두 번째 줄 민트색 칠하기 (9개 셀은 민트색으로, 마지막 셀은 주황색)
-    $('.row2 .cell').each(function(index) {
-      if (index < 9) {
-        setTimeout(() => {
-          $(this).addClass('highlight-mint');  // 첫 9개 셀 민트색
-        }, (10 + index) * 300); // 10개 셀 후 0.3초씩 지연
-      }
-      else if (index === 9) {
-        // 마지막 셀 (10번째 셀) - 첫 번째 줄이 끝난 후 실행
-        setTimeout(() => {
-          $(this).removeClass('highlight-mint').addClass('highlight-orange');  // 마지막 셀 주황색
-        }, 3000);  // 3초 후에 주황색이 나오도록 설정
-      }
-    });
+  rows.forEach((row, idx) => {
+    // row1, row2, row3, row4 중 하나만 필터링
+    const rowClass = Array.from(row.classList).find(cls => /^row\d$/.test(cls));
+    const config = rowConfigs[rowClass];
 
-    // 세 번째 줄 1-6열 민트색 칠하기
-    $('.row3 .cell').each(function(index) {
-      setTimeout(() => {
-        if (index >= 0 && index < 6) {
-          $(this).addClass('highlight-mint');
+    console.log(`Row ${idx} | Class: ${rowClass} | Config:`, config);
+
+    if (!config) return;
+
+    const cells = row.querySelectorAll(".cell");
+
+    console.log(`  → Found ${cells.length} .cell elements in ${rowClass}`);
+
+    cells.forEach((cell, index) => {
+      cell.addEventListener("click", function () {
+        console.log(`Clicked cell [${rowClass}][${index}]`);
+
+        if (rowClass === "row2" && index === 9 && config.last) {
+          this.style.backgroundColor = config.last;
+        } else if (index >= config.range[0] && index < config.range[1]) {
+          this.style.backgroundColor = config.color;
         }
-      }, (20 + index) * 300); // 추가 지연
+      });
     });
-
-    // 네 번째 줄 1-4열 민트색 칠하기
-    $('.row4 .cell').each(function(index) {
-      setTimeout(() => {
-        if (index >= 0 && index < 4) {
-          $(this).addClass('highlight-mint');
-        }
-      }, (30 + index) * 300); // 추가 지연
-    });
-  }
-
-  // 새로고침 후 애니메이션 초기화 및 첫 로드 시 실행
-  $(window).on('load', function() {
-    // 새로고침 시 Contact 섹션이 화면에 보일 때만 애니메이션 실행
-    const sectionTop = contactSection.offset().top;
-    const windowTop = $(window).scrollTop();
-    const windowBottom = windowTop + $(window).height();
-
-    // 페이지 로딩 후 Contact 섹션이 처음 화면에 보일 때만 애니메이션 실행
-    if (windowBottom > sectionTop && windowTop < (sectionTop + contactSection.outerHeight())) {
-      resetColors();  // 색상 초기화
-      animateCells();  // 애니메이션 실행
-      contactSection.addClass('animated');  // 애니메이션 완료 표시
-    }
-  });
-
-  // 스크롤 이벤트에 따라 애니메이션 실행
-  $(window).on('scroll', function() {
-    const sectionTop = contactSection.offset().top;
-    const sectionBottom = sectionTop + contactSection.outerHeight();
-    const windowTop = $(window).scrollTop();
-    const windowBottom = windowTop + $(window).height();
-
-    // 섹션이 화면에 보일 때만 애니메이션 실행
-    if (windowBottom > sectionTop && windowTop < sectionBottom) {
-      // 이미 애니메이션이 실행되었는지 체크
-      if (!contactSection.hasClass('animated')) {
-        resetColors();  // 색상 초기화
-        animateCells();  // 애니메이션 실행
-        contactSection.addClass('animated');  // 애니메이션 완료 상태 표시
-      }
-    }
   });
 });
+
 })

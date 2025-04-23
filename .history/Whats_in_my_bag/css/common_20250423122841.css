@@ -282,9 +282,9 @@
 }
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
-    background: #fff;
     font-family: var(--Glamour_Absolute);
     font-size: 96px;
+    background: #fff;
     display: table;
     border-collapse: separate;
     border-spacing: 0; /* 안 겹치게 하기 위해 */

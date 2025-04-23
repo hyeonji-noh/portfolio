@@ -282,7 +282,6 @@
 }
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
-    background: #fff;
     font-family: var(--Glamour_Absolute);
     font-size: 96px;
     display: table;
@@ -305,8 +304,6 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.cell.highlight-orange { background-color: #FF6E4E; }
-.cell.highlight-mint { background-color: #3BFBA8; }
 .player_name_input {
     text-align: center;
     margin-top: 30px;

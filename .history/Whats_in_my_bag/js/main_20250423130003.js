@@ -393,13 +393,12 @@ document.querySelectorAll('.postit-tab').forEach(tab => {
 });
 
 /* 클릭시 컬러 변경 */
-
 $(document).ready(function() {
   const contactSection = $('.contact_main');
   
   // 색상 초기화 함수
   function resetColors() {
-    $('.cell').removeClass('highlight-orange highlight-mint');
+    $('.cell').removeClass('highlight-orange highlight-mint'); // 모든 셀 초기화
   }
 
   // 색칠 애니메이션 함수
@@ -445,20 +444,10 @@ $(document).ready(function() {
     });
   }
 
-  // 새로고침 후 애니메이션 초기화 및 첫 로드 시 실행
-  $(window).on('load', function() {
-    // 새로고침 시 Contact 섹션이 화면에 보일 때만 애니메이션 실행
-    const sectionTop = contactSection.offset().top;
-    const windowTop = $(window).scrollTop();
-    const windowBottom = windowTop + $(window).height();
-
-    // 페이지 로딩 후 Contact 섹션이 처음 화면에 보일 때만 애니메이션 실행
-    if (windowBottom > sectionTop && windowTop < (sectionTop + contactSection.outerHeight())) {
-      resetColors();  // 색상 초기화
-      animateCells();  // 애니메이션 실행
-      contactSection.addClass('animated');  // 애니메이션 완료 표시
-    }
-  });
+  // 새로고침 후 애니메이션이 실행되지 않도록 초기화
+  if (!sessionStorage.getItem('contactAnimated')) {
+    sessionStorage.setItem('contactAnimated', 'false');
+  }
 
   // 스크롤 이벤트에 따라 애니메이션 실행
   $(window).on('scroll', function() {
@@ -469,13 +458,18 @@ $(document).ready(function() {
 
     // 섹션이 화면에 보일 때만 애니메이션 실행
     if (windowBottom > sectionTop && windowTop < sectionBottom) {
-      // 이미 애니메이션이 실행되었는지 체크
-      if (!contactSection.hasClass('animated')) {
-        resetColors();  // 색상 초기화
-        animateCells();  // 애니메이션 실행
-        contactSection.addClass('animated');  // 애니메이션 완료 상태 표시
+      // 'contactAnimated'가 false일 때만 애니메이션 실행
+      if (sessionStorage.getItem('contactAnimated') === 'false') {
+        resetColors(); // 섹션 진입 전 색상 초기화
+        animateCells(); // 애니메이션 실행
+        sessionStorage.setItem('contactAnimated', 'true'); // 애니메이션 실행 후 'true'로 설정
       }
     }
+  });
+
+  // 페이지 로드 시 색상 초기화
+  $(window).on('load', function() {
+    resetColors();
   });
 });
 })

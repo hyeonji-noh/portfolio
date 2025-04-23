@@ -282,7 +282,7 @@
 }
 .contact_main .bingo_visual .bingo_board{
     width: 1500px; height: 600px;
-    background: #fff;
+    background: #000;
     font-family: var(--Glamour_Absolute);
     font-size: 96px;
     display: table;
