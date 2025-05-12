@@ -128,12 +128,16 @@ body.no-scroll {
 .main_bag {
     width: 100%;
     height: 100vh;
-    position: relative;
+    position: fixed;
+    left: 100%; top: 0;
     overflow: hidden;
     background: #fff;
     display: block;
+    transition: .6s;
 }
-
+.main_bag.on{
+    left: 0;
+}
 .main_visual {
     position: relative;
     width: 100%;

@@ -11,13 +11,13 @@
     gap: 100px;
     padding: 60px;
     position: relative;
+    overflow: hidden;
 }
 .Resume .section-title {
     width: 230px; height: 35px;
     font-family: 'Cooper Black', serif;
     font-size: 25px;
     border: 1px solid #000;
-    display: inline-block;
     padding: 3px 15px;
     border-radius: 20px;
     display: inline-flex;
@@ -71,6 +71,16 @@
     padding: 40px;
     position: absolute;
     top: 1%; right: 10%;
+    opacity: 0;
+    transform: scale(0.5) translateZ(-200px);
+    transform-origin: left center;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+    z-index: -1;
+}
+.Resume_right.show {
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+  z-index: 1;
 }
 .Resume_right h2{
     font-family: var(--Blenny-Trial);
@@ -484,7 +494,6 @@ opacity: 1;
   align-items: center;
   justify-content: center;
   height: 100%;
-  cursor: pointer;
 }
 .sticker-wrapper .sticker-right {
   flex: 1;

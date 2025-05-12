@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticker_book</title>
+    <script src="https://kit.fontawesome.com/1ab5823e8c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/sticker.js" defer></script>
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+    <nav><button class="ham">ham</button></nav>
+    <section class="main_bag" id="con1">
+        <div class="main_visual">
+          <img src="img/main_bag.png" alt="가방" class="bag">
+          <img src="img/magazine_img.png" class="move-to item item1" data-target="project_overview" alt="잡지">
+          <img src="img/main_passport.png" class="move-to item item2" data-target="resume" alt="여권">
+          <img src="img/main_ticket.png" class="move-to item item3" data-target="contact_main" alt="티켓">
+          <img src="img/Sticker_main.png"  class="move-to item item4" data-target="sticker_book" alt="스티커">
+        </div><!-- //.main_visual -->
+        <div class="text">
+          <div id="text1">What’s</div>
+          <div id="text2">in</div>
+          <div id="text3">my</div>
+          <div id="text4">bag?</div>
+        </div><!-- //.text -->
+      </section><!-- //.main_bag -->
+
+    <main class="sticker_book section" id="sticker_book">
+        <div class="sticker-wrapper">
+          <div class="sticker-left">
+            <h2>MODEL NO.1.HYEONJI </h2>
+            <div class="character-container">
+              <img class="character" src="img/sticker_women.png" alt="women">
+              <div class="click-me-text">Click me!</div>
+              <div class="speech-bubble hidden">
+                <p>궁금해? 하나씩 눌러봐!</p></div>
+            </div><!--//.character-container  -->
+            <div class="flower-bubble">
+              <p class="flower-text"></p></div>
+            <ul>
+              <li><img src="img/sticker_ai.png" alt=""></li>
+              <li><img src="img/sticker_ps.png" alt=""></li>
+              <li><img src="img/sticker_figma.png" alt=""></li>
+              <li><img src="img/sticker_vs.png" alt=""></li>
+            </ul>
+          </div><!-- sticker-left -->
+          
+          <div class="sticker-right">
+            <div id="popupOverlay" class="popup-overlay"></div>
+            <div class="flower-popup" id="stickerPopup">
+              <img src="img/flower.png" alt="flower background">
+              <p id="popupText"></p></div>
+            <div class="sticker sticker1">
+              <img src="img/sticker_flexible.png" alt="">
+              <p>FLEXIBLE</p>
+            </div>   
+            <div class="sticker sticker2">
+              <img src="img/sticker_creativity.png" alt="">
+              <p>CREATIVITY</p>
+            </div>
+            <div class="sticker sticker3">
+              <img src="img/sticker_teamwork.png" alt="">
+              <p>LEADERSHIP<br>
+                TEAM WORK</p>
+            </div>
+            <div class="sticker sticker4">
+              <img src="img/sticker_time.png" alt="">
+              <p>TIME MANAGING</p>
+            </div>
+            <div class="sticker sticker5">
+              <img src="img/sticker_leg.png" alt="">
+            </div>
+            <div class="sticker sticker6">
+              <img src="img/sticker_hand.png" alt="">
+            </div>  
+            <div class="sticker sticker7">
+              <img src="img/sticker_exercise.png" alt="">
+            </div>
+            <div class="sticker sticker8">
+              <img src="img/sticker_power_icon.png" alt="">
+              <p>energetic<br> 
+                10000%</p>
+            </div>
+          </div><!--sticker-right  -->
+        </div><!-- //.sticker-wrapper -->
+    </main><!-- //.Sticker_book -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <script src="https://kit.fontawesome.com/1ab5823e8c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/nav.js" defer></script>
+    <script src="js/contact.js" defer></script>
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+    <nav><button class="ham">ham</button></nav>
+    <section class="main_bag" id="con1">
+        <div class="main_visual">
+          <img src="img/main_bag.png" alt="가방" class="bag">
+          <img src="img/magazine_img.png" class="move-to item item1" data-target="project_overview" alt="잡지">
+          <img src="img/main_passport.png" class="move-to item item2" data-target="resume" alt="여권">
+          <img src="img/main_ticket.png" class="move-to item item3" data-target="contact_main" alt="티켓">
+          <img src="img/Sticker_main.png"  class="move-to item item4" data-target="sticker_book" alt="스티커">
+        </div><!-- //.main_visual -->
+        <div class="text">
+          <div id="text1">What’s</div>
+          <div id="text2">in</div>
+          <div id="text3">my</div>
+          <div id="text4">bag?</div>
+        </div><!-- //.text -->
+      </section><!-- //.main_bag -->
+
+
+      <main class="contact_main section" id="contact_main">
+        <div class="bingo_visual">
+  
+        <div class="contact_title">
+          <h2>FIND-MY-CONTACT!</h2>
+          <div class="tag-left"><img src="img/flower.png" alt="flower"><span>SO<br>IMPORTANT</span></div>
+          <div class="tag-right"><img src="img/flower.png" alt="flower"><span>SO EASY!!</span></div>
+  
+        </div><!-- //.contact_title -->
+      
+        <div class="bingo_board">
+          <div class="row row1">
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">1</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+            <div class="cell">0</div>
+          </div>
+          <div class="row row2">
+            <div class="cell">n</div>
+            <div class="cell">n</div>
+            <div class="cell">h</div>
+            <div class="cell">y</div>
+            <div class="cell">e</div>
+            <div class="cell">o</div>
+            <div class="cell">n</div>
+            <div class="cell">j</div>
+            <div class="cell">i</div>
+            <div class="cell">0</div>
+          </div>
+          <div class="row row3">
+            <div class="cell">@</div>
+            <div class="cell">g</div>
+            <div class="cell">m</div>
+            <div class="cell">a</div>
+            <div class="cell">i</div>
+            <div class="cell">l</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+          </div>
+          <div class="row row4">
+            <div class="cell">.</div>
+            <div class="cell">c</div>
+            <div class="cell">o</div>
+            <div class="cell">m</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+            <div class="cell">2</div>
+          </div>
+        </div><!-- //.bingo_board -->
+      
+        <div class="player_name_input">
+          <label for="playerName">PLAYER' S NAME : </label>
+          <input type="text" id="playerName" name="playerName" maxlength="3" />
+        </div>
+      </div><!-- //.bingo_visual -->  
+    </main><!-- //.contact_main-->
+  
+      <div class="contact_modal_bg"></div><!-- //.contact_modal_bg -->
+      <div class="contact_modal_wrap"></div><!-- //.contact_modal_wrap -->
+</body>
+</html>

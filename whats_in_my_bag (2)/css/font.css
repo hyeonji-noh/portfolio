@@ -1,0 +1,118 @@
+@charset "uft-8";
+
+@font-face{
+    font-family: 'cooper-Black';
+    src: url(../font/COOPBL.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Blenny Trial';
+    src: url(../font/Blenny_Trial_Blk.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Souvenir';
+    src: url(../font/Souvenir.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SouvenirB';
+    src: url(../font/SouvenirB.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SouvenirI';
+    src: url(../font/SouvenirI.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SouvenirBI';
+    src: url(../font/SouvenirBI.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url(../font/Cafe24Ohsquare-v2.0.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Glamour_Absolute';
+    src: url(../font/fonnts.com-Glamour_Absolute_regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoPubBatang';
+    src: url(../font/KoPub\ Batang\ Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KoPubBatang';
+    src: url(../font/KoPub\ Batang\ Medium.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KoPubBatang';
+    src: url(../font/KoPub\ Batang\ Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 100;
+	src: url('./SUIT-Thin.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 200;
+	src: url('./SUIT-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 300;
+	src: url('./SUIT-Light.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 400;
+	src: url('./SUIT-Regular.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 500;
+	src: url('./SUIT-Medium.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 600;
+	src: url('./SUIT-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 700;
+	src: url('./SUIT-Bold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 800;
+	src: url('./SUIT-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'SUIT';
+	font-weight: 900;
+	src: url('./SUIT-Heavy.woff2') format('woff2');
+}
